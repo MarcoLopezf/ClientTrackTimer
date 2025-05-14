@@ -1,13 +1,16 @@
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./routes/AppRouter";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header/>
+      <AppRouter />
+      <Footer/>
+    </BrowserRouter>
   );
 }
 
